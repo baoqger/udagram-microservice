@@ -11,7 +11,8 @@
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:image": "docker build -t baoqger/udagram-feed-service ."
+    "build:image": "docker build -t baoqger/udagram-feed-service .",
+    "run:image": "./container-run.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
